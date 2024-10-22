@@ -4,14 +4,10 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <OutputType>Exe</OutputType>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Arrays\Arrays.csproj" />
     <ProjectReference Include="..\IO\IO.csproj" />
-    <ProjectReference Include="..\Task5\Task5.csproj" />
-    <ProjectReference Include="..\Task6\Task6.csproj" />
   </ItemGroup>
 
 </Project>
