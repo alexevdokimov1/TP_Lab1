@@ -5,9 +5,9 @@
         public static int GetCountOfNumbersWithingRange(double[] array, double more = 0, double less = 125)
         {
             int inRangeCount = 0;
-            for (int i = 0; i < array.Length; i++)
+            foreach (var single in array)
             {
-                if (array[i] > more && array[i] < less)
+                if (single > more && single < less)
                     inRangeCount++;
             }
             return inRangeCount;

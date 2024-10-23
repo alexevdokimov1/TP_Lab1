@@ -14,8 +14,8 @@
 
         public static void PrintRow<T>(IList<T> array)
         {
-            for (int i = 0; i < array.Count; i++)
-                Output.Print($"{array[i]}\t");
+            foreach (var single in array)
+                Output.Print($"{single}\t");
             Output.Print("\n");
         }
     }

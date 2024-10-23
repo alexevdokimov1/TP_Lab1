@@ -2,14 +2,10 @@
 {
     public class Task5Solution
     {
-        public static double GetMin(double[] array)
+        public static double GetDifferenceBetweenMaxAndMin(double[] array)
         {
-            return array.Min();
-        }
-
-        public static double GetMax(double[] array)
-        {
-            return array.Max();
+            if(array is null || array.Length == 0) throw new ArgumentException("Массив пуст или не объявлен");
+            return array.Max()-array.Min();
         }
     }
 }

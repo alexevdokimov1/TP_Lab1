@@ -18,18 +18,17 @@ namespace UserUI
                 double[] array = ArrayActions.EnterDoubleArray(arrayElementsCount);
                 Output.SendMessage("Исходный массив");
                 Output.PrintRow(array);
-                double max = Task5Solution.GetMax(array);
-                double min = Task5Solution.GetMin(array);
-                Output.SendMessage($"Минимальное {min}; Максимальное {max}");
+                double differenceBetweenMaxAndMin = Task5Solution.GetDifferenceBetweenMaxAndMin(array);
+                Output.SendMessage($"Разность между максимальным и минимальным числом равна {differenceBetweenMaxAndMin}");
 
-                Output.SendMessage("Задание 6");
+                Output.SendMessage("Задание 6:");
                 Output.SendMessage("В одномерном массиве из 100 чисел M[] подсчитайте " +
                     "количество элементов, удовлетворяющих условию 0 < M[i] <125.");
                 array = ArrayActions.EnterDoubleArray(10);
                 Output.SendMessage("Исходный массив");
                 Output.PrintRow(array);
                 int countOfNumbers = Task6Solution.GetCountOfNumbersWithingRange(array);
-                Output.SendMessage($"Количество элементов, удовлетворяющих условию 0 < M[i] <125 равно {countOfNumbers}");
+                Output.SendMessage($"Количество элементов, удовлетворяющих условию 0 < M[i] <125 равно {countOfNumbers}.");
             }
             catch (Exception ex)
             {
