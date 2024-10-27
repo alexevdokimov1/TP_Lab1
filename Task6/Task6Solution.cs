@@ -1,6 +1,6 @@
 ﻿namespace Task6
 {
-    public class Task6Solution
+    public static class Task6Solution
     {
         public static int GetCountOfNumbersWithingRange(double[] array, double more = 0, double less = 125)
         {

@@ -1,6 +1,6 @@
 ﻿namespace Task5
 {
-    public class Task5Solution
+    public static class Task5Solution
     {
         public static double GetDifferenceBetweenMaxAndMin(double[] array)
         {
